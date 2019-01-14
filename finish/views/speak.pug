@@ -1,0 +1,115 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= speak
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+    body
+        div(class=['am-slider', 'am-slider-default'], data-am-widget='slider', data-am-slider='{}')
+            ul.am-slides
+                li
+                    img(src='images/banner3.png')
+                li
+                    img(src='images/banner4.png')
+        ul.nav
+            li
+                 a(href='klist')
+                    img(src='images/ms.png')
+                    p 美食快拍
+            li
+                a(href='klist')
+                    img(src='images/cy.png')
+                    p 厨艺交流
+            li
+                a(href='speak')
+                    img(src='images/mmp.png')
+                    p 营养说
+            li
+                a(href='speak')
+                    img(src='images/ys.jpg')
+                    p 饮食健康
+        div(class=['am-intro','am-cf','am-intro-default'], data-am-widget='intro')
+            div.am-intro-hd
+                h2.am-intro-title 营养小贴士
+            div(class=['am-g','am-intro-bd'])
+                a(href='content1')
+                    div(class=['am-intro-left','am-u-sm-3'])
+                        img(src='images/p8.jpg')
+                    div(class=['am-intro-right','am-u-sm-9'])
+                        h2 羊肉
+                        p 寒冬腊月里正是吃羊肉的最佳季节。 在冬季，人体容易出现手足冰冷，气血循环不畅的情况。泵羊肉具有补肾壮阳、温补气血、开胃健脾的功效，所以冬天吃羊肉，既能抵御风寒，又可滋补身体。
+                        div.text
+                            span.f1 2019-1-6
+                            span.fr 点赞
+                               i.am-icon-thumbs-o-up
+                            span.fr 收藏
+                               i.am-icon-star
+            div(class=['am-g', 'am-intro-bd'])
+                a(href='content2')
+                    div(class=['am-intro-left', 'am-u-sm-3'])
+                        img(src='images/p7.jpg')
+                    div(class=['am-intro-right', 'am-u-sm-9'])
+                        h2 枸杞
+                        p 冬季的养生原则一般以益气助阳、滋阴补肾为主，而枸杞就是冬季进补的好选择。 枸杞是上乘的滋补药，含有人体必需的各种营养成分。
+                        div.text
+                            span.f1 2019-1-5
+                            span.fr 点赞
+                                i.am-icon-thumbs-o-up
+                            span.fr 收藏
+                                i.am-icon-star
+            div(class=['am-g', 'am-intro-bd'])
+                a(href='content4')
+                    div(class=['am-intro-left', 'am-u-sm-3'])
+                        img(src='images/p5.png')
+                    div(class=['am-intro-right', 'am-u-sm-9'])
+                        h2 冬笋
+                        p 冬笋含有丰富的纤维素(纤维素食品)，能促进肠道蠕动，既有助于消化，又能预防便秘(便秘食品)和结肠癌的发生。 冬笋是一种高蛋白、低淀粉食品，对肥胖症、冠心病、高血压、泵糖尿病和动脉硬化等患者有一定的食疗作用。
+                        div.text
+                            span.f1 2019-1-4
+                            span.fr 点赞
+                                i.am-icon-thumbs-o-up
+                            span.fr 收藏
+                                i.am-icon-star
+            div(class=['m-g', 'am-intro-bd'])
+                a(href='content3')
+                    div(class=['am-intro-left', 'am-u-sm-3'])
+                        img(src='images/p6.jpg')
+                    div(class=['am-intro-right', 'am-u-sm-9'])
+                        h2 红薯
+                        p 冬天吃个热热的红薯，是最惬意的事情。红薯富含碳水化合物、膳食纤维、胡萝卜素、维生素以及钾、镁、铜、硒、钙(钙食品)等10余种微量元素(微量元素食品)。
+                        div.text
+                            span.f1 2019-1-3
+                            span.fr 点赞
+                                i.am-icon-thumbs-o-up
+                            span.fr 收藏
+                                i.am-icon-star
+
+        div.h50
+         div(class=['am-navbar', 'am-cf', 'am-navbar-default', 'footer'], data-am-widget='navbar')
+                ul(class=['am-navbar-nav', 'am-cf', 'am-avg-sm-4'])
+                    li
+                        a(href='/index')
+                            span
+                                img(src='images/nav.png')
+                            span.am-navbar-label 首页
+                    li
+                        a(href='/speak')
+                            span
+                                img(src='images/nav2.png')
+                            span.am-navbar-label 看看
+                    li
+                        a(href='/we')
+                            span
+                                img(src='images/nav3.png')
+                            span.am-navbar-label 我们
+                    li
+                        a(href='/member')
+                            span
+                                img(src='images/nav4.png')
+                            span.am-navbar-label 我的

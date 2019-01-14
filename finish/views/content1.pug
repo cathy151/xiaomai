@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= content1
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+        script(type='text/javascript',  src='/javascripts/jquery1.min.js')
+        script(type='text/javascript',  src='/javascripts/snow.js')
+        script.
+            (createSnow('',60));
+    body#introduction
+        header(class=['am-header','am-header-default','header'], data-am-widget='header')
+            div(class=['am-header-left','am-header-nav'])
+                a(href='/speak')
+                   i(class=['am-header-icon','am-icon-angle-left'])
+            h1.am-header-title 食品营养
+            div(class=['am-header-right','am-header-nav'])
+                a(href='#right-link')
+        div#page
+            div#container(class=['content','clearfix'])
+                div(class=['content1','content'])
+                  h1 羊肉
+                  div.text
+                    span.fl  2016-1-6
+                    span.fr
+                      i.am-icon-star 收藏546
+                    span.fr
+                      i.am-icon-thumbs-o-up 浏览174
+                  p 寒冬腊月里正是吃羊肉的最佳季节。在冬季,人体容易出现手足冰冷，气血循环不畅的情况。羊肉具有补肾壮阳、温补气血、开胃健脾的功效，所以冬天吃羊肉，既能抵御风寒，又可滋补身体。 羊肉的肉质比猪肉细嫩，且富含蛋白质(蛋白质食品)和维生素(维生素食品)。
+                  p  羊肉热量比其它畜肉高，寒冬常吃羊肉可益气补虚，促进血液循环，增强御寒能力。羊肉还可增加消化酶，保护胃壁，易于消化(消化食品)，因此多吃羊肉能提高身体免疫力，民间有“要想长寿，常吃羊肉”的说法。
+                  p 最佳食用方法：羊肉最好还是炖着吃，因为羊肉经过炖制，会更加熟烂、鲜嫩，也易于消化。 最佳搭配：搭配山楂或绿豆可以去除膻味；搭配白萝卜、山药可补益脾肾、益胃平肝;搭配胡萝卜可补虚益气。
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread

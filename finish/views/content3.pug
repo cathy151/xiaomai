@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= content3
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+        script(type='text/javascript',  src='/javascripts/jquery1.min.js')
+        script(type='text/javascript',  src='/javascripts/snow.js')
+        script.
+            (createSnow('',60));
+    body#introduction
+        header(class=['am-header','am-header-default','header'], data-am-widget='header')
+            div(class=['am-header-left','am-header-nav'])
+                a(href='/speak')
+                    i(class=['am-header-icon','am-icon-angle-left'])
+            h1.am-header-title 食品营养
+            div(class=['am-header-right','am-header-nav'])
+                a(href='#right-link')
+        div#page
+            div#container(class=['content','clearfix'])
+                div(class=['content1','content'])
+                    h1 红薯
+                    div.text
+                        span.fl  2016-1-4
+                        span.fr
+                            i.am-icon-star 收藏189
+                        span.fr
+                            i.am-icon-thumbs-o-up 浏览585
+                    p 冬天吃个热热的红薯，是最惬意的事情。红薯富含碳水化合物、膳食纤维、胡萝卜素、维生素以及钾、镁、铜、硒、钙(钙食品)等10余种微量元素(微量元素食品)。
+                    p 此外，红薯中含有丰富的钾，能有效防止高血压(血压食品)和预防中风。
+                    p 最佳食用方法：虽然人们习惯吃烤红薯，但实际上，蒸红薯才是更健康的选择，不仅能减少营养的流失，还能减少因烤制而生成的有害物质。 最佳搭配：可以用红薯搭配大米熬制成粥，有健脾养胃、抗癌的功效。
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread
