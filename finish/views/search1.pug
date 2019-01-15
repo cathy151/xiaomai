@@ -8,10 +8,12 @@ html
         meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        link(rel='stylesheet', href='/stylesheets/scoll.css')
         script(type='text/javascript',  src='/javascripts/jquery.min.js')
         script(type='text/javascript',  src='/javascripts/amazeui.min.js')
         script(type='text/javascript',  src='/javascripts/vue.js')
         script(type='text/javascript',  src='/javascripts/vue-resource.min.js')
+        script(type='text/javascript',  src='/javascripts/scoll.js')
     body
         #showVuew
             header(class=['am-header', 'am-header-default', 'header'], data-am-widget='header')
@@ -30,7 +32,10 @@ html
                     li(v-for='infos in arr')
                         .am-gallery-item
                             img(v-bind:src='infos.img', alt='')
-                            h3.am-gallery-title {{infos.name}}
+                            h2.am-gallery-title {{infos.name}}
                             p {{infos.p}}
-                button#refresh(@click='refresh',class="sousuo") 刷新
+                button#refresh(@click='refresh',class="sousuo") 更多...
+        #scroll
+            div#toTop(class='scrollItem') 回到顶部
+            div#toBottom(class='scrollItem') 回到底部
         script(type='text/javascript',  src='/javascripts/search1.js')
