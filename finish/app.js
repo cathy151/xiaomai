@@ -18,6 +18,7 @@ var content1Router = require('./routes/content1');
 var content2Router = require('./routes/content2');
 var content3Router = require('./routes/content3');
 var content4Router = require('./routes/content4');
+var search1Router = require('./routes/search1');
 
 var app = express();
 
@@ -60,6 +61,7 @@ app.use('/content1',content1Router);
 app.use('/content2',content1Router);
 app.use('/content3',content1Router);
 app.use('/content4',content1Router);
+app.use('/search1',search1Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
