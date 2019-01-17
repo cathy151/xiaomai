@@ -88,7 +88,7 @@
 	i.prototype = {
 		createEl: function(a, b) {
 			this.el = document.createElement("img");
-			this.el.setAttribute("src", b + "images/snow" + Math.floor(Math.random() * 4) + ".gif");
+			this.el.setAttribute("src","/images/snow" + Math.floor(Math.random() * 4) + ".gif");
 			this.el.style.position = "absolute";
 			this.el.style.display = "block";
 			this.el.style.zIndex = "99999";

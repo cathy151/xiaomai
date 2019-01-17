@@ -15,10 +15,9 @@ var speakRouter = require('./routes/speak');
 var weRouter = require('./routes/we');
 var aboutRouter = require('./routes/about');
 var content1Router = require('./routes/content1');
-var content2Router = require('./routes/content2');
-var content3Router = require('./routes/content3');
-var content4Router = require('./routes/content4');
 var search1Router = require('./routes/search1');
+var search2Router = require('./routes/search2');
+var search3Router = require('./routes/search3');
 
 var app = express();
 
@@ -58,10 +57,9 @@ app.use('/speak',speakRouter);
 app.use('/we',weRouter);
 app.use('/about',aboutRouter);
 app.use('/content1',content1Router);
-app.use('/content2',content1Router);
-app.use('/content3',content1Router);
-app.use('/content4',content1Router);
 app.use('/search1',search1Router);
+app.use('/search2',search2Router);
+app.use('/search3',search3Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
