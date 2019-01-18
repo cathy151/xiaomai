@@ -2,7 +2,7 @@ doctype html
 html
     head
         meta(charset='utf-8')
-        title 水果营养
+        title 水果查询
         meta(name='description', content='食品营养')
         meta(name='keywords', content='食品营养')
         meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
@@ -30,10 +30,10 @@ html
             ul(class=['am-gallery.am-avg-sm-2', 'am-avg-md-3.am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery')
                 template(lang='pug')
                     li(v-for='infos in arr')
-                        .am-gallery-item
-                            img(v-bind:src='infos.img', alt='')
-                            h2.am-gallery-title {{infos.name}}
-                            p {{infos.p}}
+                        a(v-bind:href="'/searchcontent2/'+infos.id")
+                            .am-gallery-item
+                                img(v-bind:src='infos.img', alt='')
+                                h2.am-gallery-title {{infos.name}}
                 button#refresh(@click='refresh',class="sousuo") 更多...
         #scroll
             div#toTop(class='scrollItem') 回到顶部

@@ -30,10 +30,10 @@ html
             ul(class=['am-gallery.am-avg-sm-2', 'am-avg-md-3.am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery')
                 template(lang='pug')
                     li(v-for='infos in arr')
-                        .am-gallery-item
-                            img(v-bind:src='infos.img', alt='')
-                            h2.am-gallery-title {{infos.name}}
-                            p {{infos.p}}
+                        a(v-bind:href="'/searchcontent1/'+infos.id")
+                            .am-gallery-item
+                                img(v-bind:src='infos.img', alt='')
+                                h2.am-gallery-title {{infos.name}}
                 button#refresh(@click='refresh',class="sousuo") 更多...
         #scroll
             div#toTop(class='scrollItem') 回到顶部

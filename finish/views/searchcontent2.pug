@@ -19,24 +19,20 @@ html
     body#introduction
         header(class=['am-header','am-header-default','header'], data-am-widget='header')
             div(class=['am-header-left','am-header-nav'])
-                a(href='/index')
-                   i(class=['am-header-icon','am-icon-angle-left'])
-            h1.am-header-title 食品营养
+                a(href='/search2')
+                    i(class=['am-header-icon','am-icon-angle-left'])
+            h1.am-header-title #{info.name}
             div(class=['am-header-right','am-header-nav'])
                 a(href='#right-link')
         div#page
             div#container(class=['content','clearfix'])
                 div(class=['content1','content'])
-                      h1 #{info.name}
-                      div.text
-                        span.fl #{info.time}
-                        span.fr
-                          i.am-icon-star #{info.ss}
-                        span.fr
-                          i.am-icon-thumbs-o-up #{info.dd}
-                      p #{info.p1}
-                      p #{info.p2}
-                      p #{info.p3}
+                    div
+                        each infos in info
+                            img(src=infos.img)
+                            h1 #{infos.name}
+                            p #{infos.p1}
+                            p #{infos.p2}
         div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
             div.ds-thread
         div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')

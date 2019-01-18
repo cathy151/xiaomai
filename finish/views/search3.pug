@@ -25,15 +25,15 @@ html
                 div(class=['am-header-right', 'am-header-nav'])
                     a(href='#right-link')
             .search-input
-                input(type='text', placeholder='请输入您搜索的水果',v-model="keyword")
+                input(type='text', placeholder='请输入您搜索的药膳',v-model="keyword")
                 button.sousuo(@click='search') 搜索
             ul(class=['am-gallery.am-avg-sm-2', 'am-avg-md-3.am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery')
                 template(lang='pug')
                     li(v-for='infos in arr')
-                        .am-gallery-item
-                            img(v-bind:src='infos.img', alt='')
-                            h2.am-gallery-title {{infos.name}}
-                            p {{infos.p}}
+                        a(v-bind:href="'/searchcontent3/'+infos.id")
+                            .am-gallery-item
+                                img(v-bind:src='infos.img', alt='')
+                                h2.am-gallery-title {{infos.name}}
                 button#refresh(@click='refresh',class="sousuo") 更多...
         #scroll
             div#toTop(class='scrollItem') 回到顶部
