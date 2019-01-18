@@ -21,6 +21,12 @@ var search2Router = require('./routes/search2');
 var searchcontent2Router = require('./routes/searchcontent2');
 var search3Router = require('./routes/search3');
 var searchcontent3Router = require('./routes/searchcontent3');
+var searchmenu1Router = require('./routes/searchmenu1');
+var searchmenucontent1Router = require('./routes/searchmenucontent1');
+var searchmenu2Router = require('./routes/searchmenu2');
+var searchmenucontent2Router = require('./routes/searchmenucontent2');
+var searchmenu3Router = require('./routes/searchmenu3');
+var searchmenucontent3Router = require('./routes/searchmenucontent3');
 
 var app = express();
 
@@ -66,6 +72,12 @@ app.use('/search2',search2Router);
 app.use('/searchcontent2',searchcontent2Router);
 app.use('/search3',search3Router);
 app.use('/searchcontent3',searchcontent3Router);
+app.use('/searchmenu1',searchmenu1Router);
+app.use('/searchmenucontent1',searchmenucontent1Router);
+app.use('/searchmenu2',searchmenu2Router);
+app.use('/searchmenucontent2',searchmenucontent2Router);
+app.use('/searchmenu3',searchmenu3Router);
+app.use('/searchmenucontent3',searchmenucontent3Router);
 
 
 // catch 404 and forward to error handler

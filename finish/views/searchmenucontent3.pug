@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 详情
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+        script(type='text/javascript',  src='/javascripts/jquery1.min.js')
+        script(type='text/javascript',  src='/javascripts/snow.js')
+        script(type='text/javascript',  src='/javascripts/vue.js')
+        script(type='text/javascript',  src='/javascripts/vue-resource.min.js')
+        script.
+            (createSnow('',60));
+    body#introduction
+        header(class=['am-header','am-header-default','header'], data-am-widget='header')
+            div(class=['am-header-left','am-header-nav'])
+                a(href='/searchmenu3')
+                    i(class=['am-header-icon','am-icon-angle-left'])
+            h1.am-header-title #{info.name}
+            div(class=['am-header-right','am-header-nav'])
+                a(href='#right-link')
+        div#page
+            div#container(class=['content','clearfix'])
+                div(class=['content1','content'])
+                    div
+                        each infos in info
+                            img(src=infos.img)
+                            h1 #{infos.name}
+                            p #{infos.p1}
+                            p #{infos.p2}
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread
+        div(data-am-widget='duoshuo',class=['am-duoshuo','am-duoshuo-default'], data-ds-short-name='amazeui')
+            div.ds-thread

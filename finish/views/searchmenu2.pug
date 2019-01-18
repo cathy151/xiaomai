@@ -2,7 +2,7 @@ doctype html
 html
     head
         meta(charset='utf-8')
-        title 营养查询
+        title 水果食谱查询
         meta(name='description', content='食品营养')
         meta(name='keywords', content='食品营养')
         meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
@@ -18,19 +18,19 @@ html
         #showVuew
             header(class=['am-header', 'am-header-default', 'header'], data-am-widget='header')
                 div(class=['am-header-left', 'am-header-nav'])
-                    a(href='/index')
+                    a(href='/speak')
                         i(class=['am-header-icon', 'am-icon-angle-left'])
                 h1.am-header-title
-                    a(href='#title-link', style='color: #333;') 营养查询
+                    a(href='#title-link', style='color: #333;') 水果查询
                 div(class=['am-header-right', 'am-header-nav'])
                     a(href='#right-link')
             .search-input
-                input(type='text', placeholder='请输入您搜索的食材',v-model="keyword")
+                input(type='text', placeholder='请输入您搜索的水果食谱',v-model="keyword")
                 button.sousuo(@click='search') 搜索
             ul(class=['am-gallery.am-avg-sm-2', 'am-avg-md-3.am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery',)
                 template(lang='pug')
                     li.tutu(v-for='infos in arr')
-                        a(v-bind:href="'/searchcontent1/'+infos.id")
+                        a(v-bind:href="'/searchmenucontent2/'+infos.id")
                             .am-gallery-item
                                 img(v-bind:src='infos.img', alt='')
                                 h2.am-gallery-title {{infos.name}}
@@ -38,4 +38,4 @@ html
         #scroll
             div#toTop(class='scrollItem') 回到顶部
             div#toBottom(class='scrollItem') 回到底部
-        script(type='text/javascript',  src='/javascripts/search1.js')
+        script(type='text/javascript',  src='/javascripts/searchmenu2.js')

@@ -29,7 +29,7 @@ html
                 button.sousuo(@click='search') 搜索
             ul(class=['am-gallery.am-avg-sm-2', 'am-avg-md-3.am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery')
                 template(lang='pug')
-                    li(v-for='infos in arr')
+                    li.tutu(v-for='infos in arr')
                         a(v-bind:href="'/searchcontent3/'+infos.id")
                             .am-gallery-item
                                 img(v-bind:src='infos.img', alt='')
