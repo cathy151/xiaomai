@@ -11,7 +11,7 @@
  Target Server Version : 50715
  File Encoding         : 65001
 
- Date: 18/01/2019 20:55:31
+ Date: 20/01/2019 15:33:57
 */
 
 SET NAMES utf8mb4;
@@ -175,6 +175,8 @@ INSERT INTO `searchfood` VALUES (3, '红薯', '/images/f4.jpg');
 INSERT INTO `searchfood` VALUES (4, '西红柿', '/images/f6.jpg');
 INSERT INTO `searchfood` VALUES (5, '青菜', '/images/f17.jpg');
 INSERT INTO `searchfood` VALUES (6, '豌豆', '/images/f18.jpg');
+INSERT INTO `searchfood` VALUES (7, '黄瓜', '/images/f19.jpg');
+INSERT INTO `searchfood` VALUES (8, '芹菜', '/images/f20.jpg');
 
 -- ----------------------------
 -- Table structure for searchfoodcontent
@@ -188,7 +190,7 @@ CREATE TABLE `searchfoodcontent`  (
   `p2` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of searchfoodcontent
@@ -199,6 +201,8 @@ INSERT INTO `searchfoodcontent` VALUES (3, 3, '/images/f4.jpg', '富含蛋白质
 INSERT INTO `searchfoodcontent` VALUES (4, 4, '/images/f6.jpg', '西红柿含糖量也很高，约为1.5%-4.5%，而且其中大部分是易于被人体直接吸收的葡萄糖和果糖。西红柿还含有丰富的胡萝卜素、维生素B族，其中包括对保护血管健康、防治高血压有一定作用的芦丁。', '其性微寒味甘酸，生津止渴，凉血养肝，清热解毒，治疗高血压、坏血病，预防动脉硬化、肝脏病等。不宜生吃，尤其是脾胃虚寒及月经期间的妇女。不宜空腹吃，空腹时胃酸分泌量增多，因番茄所含的某种化学物质与胃酸结合易形成不溶于水的块状物，食之往往引起腹痛，造成胃不适、胃胀痛。', '西红柿');
 INSERT INTO `searchfoodcontent` VALUES (5, 5, '/images/f17.jpg', '热量:23大卡,胡罗卜素:620微克,钾:210毫克,钙:108毫克,维生素A:103微克,钠:55.8毫克,磷:39毫克,维生素C:36毫克,镁:22毫克,碳水化合物:3.8克,蛋白质:1.8克,铁:1.2毫克,纤维素:1.1克,维生素E:0.88毫克,硒:0.79微克,烟酸:0.7毫克,脂肪:0.5克,锌:0.33毫克,锰:0.23毫克,核黄素:0.11毫克,铜:0.06毫克,硫胺素:0.04毫克.', '青菜为含维生素和矿物质最丰富的蔬菜之一，一个成年人如果每天吃500克青菜，就能满足人体所需的维生素、胡萝卜素、钙、铁等，保持血管弹性,青菜中含有大量粗纤维，其进人人体内与脂肪结合后，可防止血浆胆固醇形成，促使胆固醇代谢物——胆酸得以排出体外，以减少动脉粥样硬化的形成，从而保持血管弹性。润泽皮肤，延缓衰老青菜中含有大量胡萝卜素和维生素C，进入人体后，可促进皮肤细胞代谢，防止皮肤粗糙及色素沉着，使皮肤亮洁。延缓衰老。', '青菜');
 INSERT INTO `searchfoodcontent` VALUES (6, 6, '/images/f18.jpg', '豌豆是一种营养性食品，特别是含铜、铬等微量元素较多， 铜有利于造血以及骨骼和脑的发育；铬有利于糖和脂肪的代谢， 能维持胰岛素的正常功能。豌豆中所含的胆碱、蛋氨酸有助于防止动脉硬化；而且豌豆鲜品所含的维生素C，在所有鲜豆中名列榜首。糖尿病、高血压、冠心病者，老年人、儿童，食豌豆都有好处。豌豆所含植物血球凝集素与莱豆、扁豆所含凝集素的作用类似，能凝集人体的红细胞，促进有丝分裂；能激活肿瘤病人的淋巴细胞，产生淋巴毒素，对各种动物细胞有非特异性的伤害作用。因此，有防治肿瘤的作用。', '豌豆味甘、性平，归脾、胃经，具有益中气、止泻痢、调营卫、利小便、消痈肿、解乳石毒之功效。对脚气、痈肿、乳汁不通、脾胃不适、呃逆呕吐、心腹胀痛、口渴泄痢等病症，有一定的食疗作用。豌豆性味甘平，有和中下气、利小便、解疮毒的功效。豌豆煮食能生津解渴、通乳、消肿胀。鲜豌豆榨汁饮服可治糖尿病。豌豆研末涂患处，可治痈肿、痔疮。青豌豆和食荚豌豆含丰富的维生素C，可有效预防牙龈出血，并可预防感冒。', '豌豆');
+INSERT INTO `searchfoodcontent` VALUES (7, 7, '/images/f19.jpg', '黄瓜富含蛋白质、糖类、维生素B2、维生素C、维生素E、胡萝卜素、尼克酸、钙、磷、铁等营养成分。', '黄瓜味甘，甜、性凉、苦、无毒，入脾、胃、大肠；具有除热，利水利尿，清热解毒的功效；主治烦渴，咽喉肿痛，火眼，火烫伤。还有减肥功效。\r\n黄瓜皮所含营养素丰富，应当保留生吃。但为了预防农药残留对人体的伤害，黄瓜应先在盐水中泡15-20分钟再洗净生食。用盐水泡黄瓜时切勿掐头去根，要保持黄瓜的完整，以免营养素在泡的过程中从切面流失。另外，凉拌菜应现做现吃，不要做好后长时间放置，这样也会促使维生素损失。', '黄瓜');
+INSERT INTO `searchfoodcontent` VALUES (8, 8, '/images/f20.jpg', '旱芹含有丰富的维生素A、维生素B1、维生素B2、维生素C和维生素P，钙，铁，磷等矿物质含量也多，此外还有蛋白质、甘露醇和食物纤维等成分。\r\n叶茎中还含有药效成分的芹菜苷、佛手苷内酯和挥发油，具有降血压、降血脂、防治动脉粥样硬化的作用；对神经衰弱、月经失调、痛风、肌肉痉挛也有一定的辅助食疗作用；它还能促进胃液分泌，增加食欲。特别是老年人，由于身体活动量小、饮食量少、饮水量不足而易患大便干燥，经常吃点芹菜可刺激胃肠蠕动利于排便。', '人们吃芹菜时应注意两点：一是芹菜属凉性食物，阴盛者常吃可清火，阴虚者则不宜多吃，多吃会导致胃寒，影响消化，大便变稀；二是芹菜所含营养成分多在菜叶中，应连叶一起吃，不要只吃茎杆丢掉叶。', '芹菜');
 
 -- ----------------------------
 -- Table structure for searchfoodmenu
@@ -355,6 +359,23 @@ INSERT INTO `speak` VALUES (3, '药膳鸭汤', '../images/p2.jpg');
 INSERT INTO `speak` VALUES (4, '番茄鸡蛋汤', '../images/p3.jpg');
 
 -- ----------------------------
+-- Table structure for tab_we
+-- ----------------------------
+DROP TABLE IF EXISTS `tab_we`;
+CREATE TABLE `tab_we`  (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `name` bigint(255) NULL DEFAULT NULL,
+  `xingming` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `pp` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tab_we
+-- ----------------------------
+INSERT INTO `tab_we` VALUES (1, 15180175652, '孔丽', '小肚鸡肠');
+
+-- ----------------------------
 -- Table structure for test_web
 -- ----------------------------
 DROP TABLE IF EXISTS `test_web`;
@@ -363,7 +384,7 @@ CREATE TABLE `test_web`  (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of test_web
@@ -371,5 +392,6 @@ CREATE TABLE `test_web`  (
 INSERT INTO `test_web` VALUES (1, '15180175652', '8023.cathy');
 INSERT INTO `test_web` VALUES (2, '12131456422', '215234534');
 INSERT INTO `test_web` VALUES (3, '12345678965', '1234567');
+INSERT INTO `test_web` VALUES (4, '15397919886', '1234567');
 
 SET FOREIGN_KEY_CHECKS = 1;
