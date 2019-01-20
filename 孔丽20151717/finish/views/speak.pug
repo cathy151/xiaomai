@@ -1,0 +1,70 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= speak
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+    body
+        div(class=['am-slider', 'am-slider-default'], data-am-widget='slider', data-am-slider='{}')
+            ul.am-slides
+                li
+                    img(src='images/banner3.png')
+                li
+                    img(src='images/banner4.png')
+        ul.nav
+            li
+                 a(href='/searchmenu1')
+                    img(src='images/ms.png')
+                    p 传统食谱
+            li
+                a(href='/searchmenu2')
+                    img(src='images/cy.png')
+                    p 果味食谱
+            li
+                a(href='/searchmenu3')
+                    img(src='images/mmp.png')
+                    p 药膳食谱
+            li
+                a(href='speak')
+                    img(src='images/ys.jpg')
+                    p 大家说
+        div(class=['am-titlebar', 'am-titlebar-default', 'title'], data-am-widget='titlebar')
+            h2.am-titlebar-title 今日食谱
+            nav.am-titlebar-nav
+        ul(class=['am-gallery', 'am-avg-sm-2', 'am-avg-md-3', 'am-avg-lg-4', 'am-gallery-default', 'product'], data-am-widget='gallery')
+            each infos in info
+                li
+                    div.am-gallery-item
+                        a(href='/detail')
+                            img(src=infos.img)
+                            h3.am-gallery-title #{infos.name}
+
+        div.h50
+         div(class=['am-navbar', 'am-cf', 'am-navbar-default', 'footer'], data-am-widget='navbar')
+                ul(class=['am-navbar-nav', 'am-cf', 'am-avg-sm-4'])
+                    li
+                        a(href='/index')
+                            span
+                                img(src='images/nav.png')
+                            span.am-navbar-label 首页
+                    li
+                        a(href='/speak')
+                            span
+                                img(src='images/nav2.png')
+                            span.am-navbar-label 看看
+                    li
+                        a(href='/we')
+                            span
+                                img(src='images/nav3.png')
+                            span.am-navbar-label 我们
+                    li
+                        a(href='/member')
+                            span
+                                img(src='images/nav4.png')
+                            span.am-navbar-label 我的

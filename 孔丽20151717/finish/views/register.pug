@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title= register
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/style1.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        link(rel='stylesheet', href='/stylesheets/mui.min.css')
+        script(type='text/javascript',  src='/javascripts/zhuce.js')
+    body
+        header(class=['mui-bar','mui-bar-nav'])
+             a(href='/login')
+                 i(class=['am-header-icon','am-icon-angle-left'])
+             h1.mui-title 注册
+        div.mui-content
+            div.public-margin-top
+                form.mui-input-group(action='/register', method='post')
+                    div(class=['mui-input-row','register-input'])
+                        input.mui-input(type='text', placeholder='手机号', name='username', autocomplete='off')
+                    div.mui-input-row
+                        input(type='password', placeholder='密码',name='password')
+                    div.mui-input-row
+                        input(type='password', placeholder='密码',name='password1')
+                    button(class=['public-g-btn','btn-block'], onclick="return zhuce()") 注册
+                    div.cuowu #{err}

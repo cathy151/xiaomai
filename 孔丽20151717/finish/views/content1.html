@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="食品营养">
+    <meta name="keywords" content="食品营养">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css">
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/amazeui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery1.min.js"></script>
+    <script type="text/javascript" src="/javascripts/snow.js"></script>
+    <script type="text/javascript" src="/javascripts/vue.js"></script>
+    <script type="text/javascript" src="/javascripts/vue-resource.min.js"></script>
+    <script>(createSnow('',60));</script>
+  </head>
+  <body id="introduction">
+    <div id="showVuew">
+      <header class="am-header am-header-default header" data-am-widget="header">
+        <div class="am-header-left am-header-nav"><a href="/index"><i class="am-header-icon am-icon-angle-left"></i></a></div>
+        <h1 class="am-header-title">食品营养</h1>
+        <div class="am-header-right am-header-nav"><a href="#right-link"></a></div>
+      </header>
+      <div id="page">
+        <div class="content clearfix" id="container">
+          <div class="content1 content">
+            <h1>{{infos.name}}</h1>
+            <div class="text"><span class="fl">{{infos.time}}</span><span class="fr"><i class="am-icon-star">{{infos.ss}}</i></span><span class="fr"><i class="am-icon-thumbs-o-up">{{infos.dd}}</i></span></div>
+            <p>{{infos.p1}}</p>
+            <p>{{infos.p2}}</p>
+            <p>{{infos.p3}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="am-duoshuo am-duoshuo-default" data-am-widget="duoshuo" data-ds-short-name="amazeui">
+        <div class="ds-thread"></div>
+      </div>
+      <div class="am-duoshuo am-duoshuo-default" data-am-widget="duoshuo" data-ds-short-name="amazeui">
+        <div class="ds-thread"></div>
+      </div>
+      <script type="text/javascript" src="/javascripts/content1.js"></script>
+    </div>
+  </body>
+</html>

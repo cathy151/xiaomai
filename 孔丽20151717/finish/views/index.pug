@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= index
+    meta(name='description', content='食品营养')
+    meta(name='keywords', content='食品营养')
+    meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+    script(type='text/javascript',  src='/javascripts/jquery.min.js')
+    script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+    script(src='http://libs.baidu.com/jquery/1.10.2/jquery.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.goup.min.js')
+  body
+    #showVuew
+      div(class=['am-slider', 'am-slider-default'], data-am-widget='slider', data-am-slider='{}')
+              ul.am-slides
+                li
+                  img(src='images/banner.jpg')
+                li
+                  img(src='images/banner1.jpg')
+      ul.nav
+        li
+          a(href='/search1')
+            img(src='images/icon.png')
+            p 食材查询
+        li
+          a(href='/search2')
+            img(src='images/icon1.png')
+            p 水果查询
+        li
+          a(href='/search3')
+            img(src='images/icon2.png')
+            p 药材查询
+        li
+          a(href='/speak')
+            img(src='images/icon3.png')
+            p 电子书
+      div(class=['am-intro', 'am-cf', 'am-intro-default'], data-am-widget='intro')
+        div.am-intro-hd
+          h2.am-intro-title 营养小贴士
+        div.bigbox
+          each infos in info
+            div(class=['am-g', 'am-intro-bd'])
+              a(href='/content1/'+infos.id)
+                div(class=['am-intro-left', 'am-u-sm-3'])
+                  img(src=infos.img)
+                div(class=['am-intro-right', 'am-u-sm-9'])
+                  h2 #{infos.name}
+                  p #{infos.p}
+                  div.text
+                    span.f1 #{infos.time}
+                    span.fr #{infos.dd}
+                      i.am-icon-thumbs-o-up
+                    span.fr #{infos.ss}
+                      i.am-icon-star
+        button#refresh(class="sousuo") 更多...
+      div.h50
+      div(class=['am-navbar','am-cf','am-navbar-default','footer'], data-am-widget='navbar')
+        ul(class=['am-navbar-nav','am-cf','am-avg-sm-4'])
+          li
+            a(href='/index')
+              span
+                 img(src='images/nav.png')
+              span.am-navbar-label 首页
+          li
+            a(href='/speak')
+              span
+                img(src='images/nav2.png')
+              span.am-navbar-label 看看
+          li
+            a(href='/we')
+              span
+                img(src='images/nav3.png')
+              span.am-navbar-label 我们
+          li
+            a(href='/member')
+              span
+                img(src='images/nav4.png')
+              span.am-navbar-label 我的
+    script(type='text/javascript',  src='/javascripts/index.js')

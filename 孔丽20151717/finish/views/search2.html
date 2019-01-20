@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>水果营养</title>
+    <meta name="description" content="食品营养">
+    <meta name="keywords" content="食品营养">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css">
+    <link rel="stylesheet" href="/stylesheets/scoll.css">
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/amazeui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/vue.js"></script>
+    <script type="text/javascript" src="/javascripts/vue-resource.min.js"></script>
+    <script type="text/javascript" src="/javascripts/scoll.js"></script>
+  </head>
+  <body>
+    <div id="showVuew">
+      <header class="am-header am-header-default header" data-am-widget="header">
+        <div class="am-header-left am-header-nav"><a href="/index"><i class="am-header-icon am-icon-angle-left"></i></a></div>
+        <h1 class="am-header-title"><a href="#title-link" style="color: #333;">水果查询</a></h1>
+        <div class="am-header-right am-header-nav"><a href="#right-link"></a></div>
+      </header>
+      <div class="search-input">
+        <input type="text" placeholder="请输入您搜索的水果" v-model="keyword">
+        <button class="sousuo" @click="search">搜索</button>
+      </div>
+      <ul class="am-gallery.am-avg-sm-2 am-avg-md-3.am-avg-lg-4 am-gallery-default product" data-am-widget="gallery">
+        <template lang="pug">
+          <li v-for="infos in arr">
+            <div class="am-gallery-item"><img v-bind:src="infos.img" alt="">
+              <h2 class="am-gallery-title">{{infos.name}}</h2>
+              <p>{{infos.p}}</p>
+            </div>
+          </li>
+        </template>
+        <button class="sousuo" id="refresh" @click="refresh">更多...</button>
+      </ul>
+    </div>
+    <div id="scroll">
+      <div class="scrollItem" id="toTop">回到顶部</div>
+      <div class="scrollItem" id="toBottom">回到底部</div>
+    </div>
+    <script type="text/javascript" src="/javascripts/search2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= we
+        meta(name='description', content='食品营养')
+        meta(name='keywords', content='食品营养')
+        meta(name='viewport', content='initial-scale=1.0,maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/amazeui.min.css')
+        script(type='text/javascript',  src='/javascripts/jquery.min.js')
+        script(type='text/javascript',  src='/javascripts/amazeui.min.js')
+    body
+        div(class=['am-slider', 'am-slider-default'], data-am-widget='slider', data-am-slider='{}')
+            ul.am-slides
+                li
+                    img(src='images/banner.jpg')
+                li
+                    img(src='images/banner1.jpg')
+        div(class=['am-tabs','qiehuan'],data-am-tabs)
+            ul(class=['am-tabs-nav','am-nav','am-nav-tabs'])
+                li.am-actiive
+                   a(href='#tab1') app介绍
+                li
+                   a(href='#tab2') 建议留言
+            div.am-tabs-bd
+                div#tab1(class=['am-tab-panel','am-fade','am-in','am-active']) 面对当今高速发展的时代，食品营养成为人们的越来越关心的问题之一。随着计算机和网络的迅速普及，人们开始在网上搜寻养生食谱及各种食材营养的搭配,并且随着食品安全在人们日常生活中越来越重视，食品营养查询系统更加受到人们的青睐。食物营养是身体健康的最重要的因素，因为人是从一个小细胞发育成长成人的，食物营养是物质的源泉。食物的营养成分主要分为: 糖类，脂肪，蛋白质，维生素，水和无机盐。各种食材的主要营养成分不尽相同，食材之间的搭配也至关重要，因此，食品营养查询系统的应运而生也至关重要。
+                div#tab2(class=['am-tab-panel','am-fade'])
+                    input.tab-input(type='text', placeholder='姓名')
+                    input.tab-input(type='text', placeholder='电话')
+                    textarea.tab-input(placeholder='建议')
+                    button.tab-btn(type='button') 提交
+        div.h50
+         div(class=['am-navbar', 'am-cf', 'am-navbar-default', 'footer'], data-am-widget='navbar')
+             ul(class=['am-navbar-nav', 'am-cf', 'am-avg-sm-4'])
+                 li
+                     a(href='/index')
+                         span
+                             img(src='images/nav.png')
+                         span.am-navbar-label 首页
+                 li
+                     a(href='/speak')
+                         span
+                             img(src='images/nav2.png')
+                         span.am-navbar-label 看看
+                 li
+                     a(href='/we')
+                         span
+                             img(src='images/nav3.png')
+                         span.am-navbar-label 我们
+                 li
+                     a(href='/member')
+                         span
+                             img(src='images/nav4.png')
+                         span.am-navbar-label 我的
